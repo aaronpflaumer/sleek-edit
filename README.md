@@ -1,6 +1,6 @@
 # Sleek Edit
 
-Minimalist document editor for focused writing, designed to integrate with Google Documents.  
+Minimalist document editor for focused writing. Designed to integrate with Google Documents.  
 
 #### Features:
 
@@ -10,9 +10,7 @@ Minimalist document editor for focused writing, designed to integrate with Googl
 
 #### Technologies used:
  * [AngularJS](https://angularjs.org/)
- * [Express](http://expressjs.com/)
- * [Node.js](https://nodejs.org/)
- * [PostgreSQL](http://www.postgresql.org/)
+ * [Bootstrap](http://getbootstrap.com/)
 
 ### Setup
 ---
