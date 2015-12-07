@@ -1,12 +1,37 @@
-# sleek-edit
+# Sleek Edit
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+Minimalist document editor for focused writing, designed to integrate with Google Documents.  
 
-## Build & development
+#### Features:
 
-Run `grunt` for building and `grunt serve` for preview.
+ * Simple formatting controls.
+ * Background image/color selection.
+ * Typing sound options.
 
-## Testing
+#### Technologies used:
+ * [AngularJS](https://angularjs.org/)
+ * [Express](http://expressjs.com/)
+ * [Node.js](https://nodejs.org/)
+ * [PostgreSQL](http://www.postgresql.org/)
 
-Running `grunt test` will run the unit tests with karma.
+### Setup
+---
+
+#### Requirements
+
+You will need to have `npm`, `bower`, and `grunt` installed before setting up the project.
+
+#### Install Dependencies
+
+>Clone the Sleek Edit repo to your machine and then run the following in the project root folder to install all node and bower dependencies.
+```bash
+npm install && bower install
+```
+
+#### Run Local Grunt Server
+
+>Once dependencies are installed run the following to start up grunt serve.
+```bash
+grunt serve
+```
+This will host the page locally at [http://localhost:9000/](http://localhost:9000/).
