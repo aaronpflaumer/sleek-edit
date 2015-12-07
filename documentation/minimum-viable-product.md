@@ -11,12 +11,15 @@ Design concepts:
  * Designed to be run full screen with nothing but background and text visible.
  * Minimal display of elements.
  * Assuming default browser support for cut, copy, paste, undo, redo.
+ * Complex formatting left for Google Documents.
+ * Prefer to have font color only local to app. Retain black text in saved document.
 
 Cursor movement will reveal:
  * Document Options
   * New
   * Open
   * Save (Supports Google Documents autosave?)
+  * Hide/view title
  * Text Options
   * Bold
   * Italic
