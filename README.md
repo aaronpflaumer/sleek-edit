@@ -7,6 +7,7 @@ Minimalist document editor for focused writing. Designed to integrate with Googl
  * Simple formatting controls.
  * Background image/color selection.
  * Typing sound options.
+ * Google Documents support.
 
 #### Technologies used:
  * [AngularJS](https://angularjs.org/)
