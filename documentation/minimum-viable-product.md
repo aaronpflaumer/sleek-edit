@@ -12,8 +12,8 @@ Design concepts:
  * Minimal display of elements.
  * Assuming default browser support for cut, copy, paste, undo, redo.
 
-Cursor movement will reveal controls for:
- * Document
+Cursor movement will reveal:
+ * Document Options
   * New
   * Open
   * Save (Supports Google Documents autosave?)
