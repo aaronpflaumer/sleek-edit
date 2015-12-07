@@ -12,7 +12,7 @@ Design concepts:
  * Minimal display of elements.
  * Assuming default browser support for cut, copy, paste, undo, redo.
 
-Cursor movement will reveal:
+Cursor movement will reveal controls for:
  * Document
   * New
   * Open
