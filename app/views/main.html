@@ -1,1 +1,6 @@
 <button ng-click="login()" type="button" name="button">Login</button>
+<button ng-show="access_token" ng-click="list()" type="button" name="button">List</button>
+
+<div ng-repeat="item in stuffToDisplay">
+  {{item.title}}
+</div>
