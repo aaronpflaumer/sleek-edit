@@ -12,12 +12,6 @@ angular.module('sleekEditApp')
 
     $scope.docData = {};
 
-    oauth.init();
-
-    $scope.login = function () {
-      oauth.login();
-    };
-
     $scope.list = function () {
       var mime = "mimeType='application/vnd.google-apps.document'";
       var url = "https://www.googleapis.com/drive/v2/files?q="+encodeURIComponent(mime);
