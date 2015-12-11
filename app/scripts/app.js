@@ -9,9 +9,10 @@
  * Main module of the application.
  */
 angular
-  .module('sleekEditApp', ['ui.router'])
+  .module('sleekEditApp', ['ui.router', 'LocalStorageModule'])
 
-  .config(function($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider, localStorageServiceProvider) {
+
     // For any unmatched url, redirect to /
     $urlRouterProvider
       .otherwise("/");
@@ -27,5 +28,8 @@ angular
         templateUrl: "../views/login.html",
         controller: 'LoginCtrl'
       });
+
+      localStorageServiceProvider
+        .setPrefix('sleekEdit');
 
   });
