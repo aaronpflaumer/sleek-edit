@@ -2,3 +2,33 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+$thunder: #1F161E;
+$tallow: #A49A87;
+$matterhorn: #513E49;
+$bright-gray: #38394D;
+$alto: #D9D9D9;
+
+body {
+  text-align: center;
+  min-width: 800px;
+  background-color: $thunder;
+  color: $tallow;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  a:link, a:visited, a:active {
+    color: $tallow;
+  }
+  a:hover {
+    color: $alto;
+  }
+}
+
+.btn {
+  background: none;
+  border: 1px solid;
+  &:hover {
+    color: $alto;
+  }
+}
