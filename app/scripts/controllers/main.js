@@ -10,8 +10,6 @@
 angular.module('sleekEditApp')
   .controller('MainCtrl', function (oauth, $rootScope, $scope) {
 
-    oauth.init();
-
     $scope.docData = {};
 
     $scope.list = function () {

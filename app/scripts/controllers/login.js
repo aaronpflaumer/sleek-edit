@@ -10,6 +10,8 @@
 angular.module('sleekEditApp')
   .controller('LoginCtrl', function (oauth, $rootScope, $scope, localstorage) {
 
+    oauth.init();
+
     $scope.login = function () {
       oauth.login(function (response) {
         if(response) {
