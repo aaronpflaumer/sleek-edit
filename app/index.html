@@ -13,6 +13,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <!-- endbuild -->
   </head>
   <body ng-app="sleekEditApp">
@@ -22,8 +23,10 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <button ui-sref="main" type="button" class="btn">Main State</button>
-      <button ui-sref="login" type="button" class="btn">Login State</button>
+      <section class="controls">
+        <button ui-sref="main" type="button" class="btn">Main State</button>
+        <button ui-sref="login" type="button" class="btn">Login State</button>
+      </section>
       <div ui-view></div>
     </div>
 

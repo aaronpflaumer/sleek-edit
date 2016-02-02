@@ -48,7 +48,7 @@ angular.module('sleekEditApp')
         var download = $scope.fileData.exportLinks["text/html"];
         oauth.acc.get(download).done(function(result) {
           console.log(result);
-          $scope.fileData = result;
+          $scope.htmlContent = result;
         }).fail(function(err) {
           console.log(err);
         });
@@ -56,10 +56,6 @@ angular.module('sleekEditApp')
       }).fail(function(err) {
         console.log(err);
       });
-    };
-
-    $scope.post = function (fileId) {
-
     };
 
   });

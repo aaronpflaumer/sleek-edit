@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('sleekEditApp', ['ui.router', 'LocalStorageModule'])
+  .module('sleekEditApp', ['ui.router', 'LocalStorageModule', 'textAngular'])
 
   .config(function($stateProvider, $urlRouterProvider, localStorageServiceProvider) {
 
