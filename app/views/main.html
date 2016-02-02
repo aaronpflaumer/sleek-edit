@@ -1,5 +1,9 @@
+<div class="edit-box">
+  Edit Box
+</div>
+
 <button ng-click="list()" type="button" class="btn">List</button>
 
 <div ng-repeat="item in stuffToDisplay">
-  {{item.title}}
+  <a href="" ng-click="get(item.id)">{{item.title}}</a>
 </div>

@@ -14,7 +14,7 @@ angular.module('sleekEditApp')
 
     $scope.list = function () {
       var mime = "mimeType='application/vnd.google-apps.document'";
-      var url = "https://www.googleapis.com/drive/v2/files?q="+encodeURIComponent(mime);
+      var url = "https://www.googleapis.com/drive/v2/files?q=" + encodeURIComponent(mime);
       $scope.stuffToDisplay = [];
       oauth.acc.get(url).done(function(result) {
         console.log("[list] result:");
@@ -29,9 +29,37 @@ angular.module('sleekEditApp')
 
         }
         $scope.$apply();
+        console.log("stuffToDisplay:");
+        console.log($scope.stuffToDisplay);
       }).fail(function(err){
         console.log(err);
       });
+    };
+
+    $scope.get = function (fileId) {
+      var url = "https://www.googleapis.com/drive/v2/files/" + fileId;
+      oauth.acc.get(url).done(function(result) {
+        console.log("[get] result:");
+        console.log(result);
+        $scope.fileData = result;
+        console.log("[get] fileData:");
+        console.log($scope.fileData.exportLinks["text/html"]);
+
+        var download = $scope.fileData.exportLinks["text/html"];
+        oauth.acc.get(download).done(function(result) {
+          console.log(result);
+          $scope.fileData = result;
+        }).fail(function(err) {
+          console.log(err);
+        });
+
+      }).fail(function(err) {
+        console.log(err);
+      });
+    };
+
+    $scope.post = function (fileId) {
+
     };
 
   });
