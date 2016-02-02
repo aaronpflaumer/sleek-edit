@@ -28,6 +28,12 @@ module.exports = function(config) {
       'bower_components/oauthio-web/dist/oauth.min.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-local-storage/dist/angular-local-storage.js',
+      'bower_components/rangy/rangy-core.js',
+      'bower_components/rangy/rangy-classapplier.js',
+      'bower_components/rangy/rangy-highlighter.js',
+      'bower_components/rangy/rangy-selectionsaverestore.js',
+      'bower_components/rangy/rangy-serializer.js',
+      'bower_components/rangy/rangy-textrange.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",
