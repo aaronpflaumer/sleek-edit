@@ -33,13 +33,22 @@ body {
   }
 }
 
-.edit-box {
-  margin: 0 auto;
-  width: 300px;
-  height: 300px;
-  background-color: $bright-gray;
-}
-
 .controls {
   text-align: center;
+}
+
+.btn-default {
+  color: $tallow;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+  textarea {
+    text-align: center;
+    border: none;
+    background: none;
+    resize: none;
+    font-size: 3em;
+  }
 }

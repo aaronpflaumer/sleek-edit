@@ -1,4 +1,15 @@
-<div text-angular="text-angular" name="htmlContent" ng-model="htmlContent"></div>
+<div class="title">
+  <textarea rows="1" cols="40">The Title of the Story</textarea>
+</div>
+
+<div text-angular="text-angular" name="htmlContent" ng-model="htmlContent"
+  ta-toolbar-class="btn-toolbar" ta-toolbar-group-class="btn-group"
+  ta-toolbar-button-class="btn btn-default" ta-toolbar-button-active-class="active"
+  ta-toolbar="[
+    ['p','h1','h2','h3','h4','h5','h6'],
+    ['bold','italics','underline','strikeThrough','ul','ol','undo','redo','clear'],
+    ['justifyLeft','justifyCenter','justifyRight','justifyFull','indent','outdent']
+  ]"></div>
 
 <section class="controls">
   <button ng-click="list()" type="button" class="btn">List</button>
