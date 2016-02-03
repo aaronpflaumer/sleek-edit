@@ -13,6 +13,7 @@
 
 <section class="controls">
   <button ng-click="list()" type="button" class="btn">List</button>
+  <button ng-click="save()" type="button" class="btn">Save</button>
 
   <div ng-repeat="item in stuffToDisplay">
     <a href="" ng-click="get(item.id)">{{item.title}}</a>

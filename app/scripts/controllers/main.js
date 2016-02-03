@@ -58,4 +58,14 @@ angular.module('sleekEditApp')
       });
     };
 
+    $scope.save = function () {
+      var url = "https://www.googleapis.com/upload/drive/v2/files";
+      var params = "";
+      oauth.acc.post(url, params).done(function(result) {
+        console.log(result);
+      }).fail(function(err) {
+        console.log(err);
+      });
+    };
+
   });
