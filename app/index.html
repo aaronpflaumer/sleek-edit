@@ -22,9 +22,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
+    <div class="container" ng-controller="MainCtrl">
       <section class="controls">
-        <button ui-sref="main" type="button" class="btn">Main State</button>
+        <button ui-sref="editor" type="button" class="btn">Editor State</button>
         <button ui-sref="login" type="button" class="btn">Login State</button>
       </section>
       <div ui-view></div>
@@ -64,6 +64,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/editor.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/services/oauth.js"></script>
         <script src="scripts/services/localstorage.js"></script>

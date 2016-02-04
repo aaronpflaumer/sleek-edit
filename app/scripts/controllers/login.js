@@ -8,16 +8,12 @@
  * Controller of the sleekEditApp
  */
 angular.module('sleekEditApp')
-  .controller('LoginCtrl', function (oauth, $rootScope, $scope, localstorage) {
+  .controller('LoginCtrl', function (oauth, $rootScope, $scope) {
 
     oauth.init();
 
     $scope.login = function () {
-      oauth.login(function (response) {
-        if(response) {
-          localstorage.set("google", oauth.acc);
-        }
-      });
+      oauth.login();
     };
 
   });

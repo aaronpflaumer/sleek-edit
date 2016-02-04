@@ -18,10 +18,10 @@ angular
       .otherwise("/");
     // State routes
     $stateProvider
-      .state('main', {
+      .state('editor', {
         url: "/",
-        templateUrl: "../views/main.html",
-        controller: 'MainCtrl'
+        templateUrl: "../views/editor.html",
+        controller: 'EditorCtrl'
       })
       .state('login', {
         url: "/login",
