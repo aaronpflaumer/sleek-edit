@@ -68,7 +68,7 @@ angular.module('sleekEditApp').factory('oauth', function($q, localstorage) {
       return;
     }
     var closure = function(resolve, reject) {
-      acc.post(url).done(function(result) {
+      acc.post(url, params).done(function(result) {
         return resolve(result);
       }).fail(function(err) {
         console.error("Oauth POST failed : " + url + " " + params.toString(), err);

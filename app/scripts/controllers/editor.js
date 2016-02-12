@@ -37,10 +37,28 @@ angular.module('sleekEditApp')
     };
 
     $scope.saveNewFile = function () {
-      var url = "https://www.googleapis.com/upload/drive/v2/files/";
-      var params = "";
-      oauth.post(url, params).then(function(result) {
-        console.log(result);
+      var url = "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart";
+      var params = {
+        "name": "sleekEditDocument.docx",
+        "mimeType": "application/vnd.google-apps.document",
+        "description": "Sleek Edit test upload."
+      };
+      console.log(oauth);
+      oauth.post(url, params).then(function(res) {
+        console.log(typeof res);
+        console.log(res);
+        var jsonResult = JSON.parse(res);
+        console.log(jsonResult.id);
+        var url = "https://www.googleapis.com/upload/drive/v2/files/" + jsonResult.id + "?uploadType=media";
+        var params = {
+          "title": "sleekEditDocument.docx",
+          "mimeType": "application/vnd.google-apps.document",
+          "description": "Sleek Edit test upload."
+        };
+        oauth.put(url, params).then(function(result) {
+          console.log(result);
+        });
+
       });
     };
 
